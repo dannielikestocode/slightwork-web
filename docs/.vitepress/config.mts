@@ -30,7 +30,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/slightwork/core' }
+      { icon: 'github', link: 'https://slightwork.dev' }
     ]
   }
 })
