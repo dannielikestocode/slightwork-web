@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SlightWork"
-  text: "The definitive developer framework"
+  text: "The definitive Salesforce developer framework"
   tagline: Build robust, fast, and scalable applications with ease. Designed for modern development workflows.
   actions:
     - theme: brand
