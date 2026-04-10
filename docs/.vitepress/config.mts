@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/overview/introduction' }
+      { text: 'Documentation', link: '/overview/introduction' },
       { text: 'Roadmap', link: '/overview/introduction' }
     ],
 
@@ -20,7 +20,7 @@ export default defineConfig({
           { text: 'Introduction', link: '/overview/introduction' },
           { text: 'Installation', link: '/overview/installation' },
           { text: 'Project Structure', link: '/overview/project-structure' },
-          { text: 'Naming Conventions', link: '/overview/naming-conventions' },
+          { text: 'Naming Conventions', link: '/overview/naming-conventions' }
         ]
       },
       {
