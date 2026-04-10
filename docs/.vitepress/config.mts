@@ -10,6 +10,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/overview/introduction' }
+      { text: 'Roadmap', link: '/overview/introduction' }
     ],
 
     sidebar: [
@@ -29,12 +30,6 @@ export default defineConfig({
           { text: 'Markdown Examples', link: 'apex/markdown-examples' },
           { text: 'Runtime API Examples', link: 'apex/api-examples' }
         ]
-      },
-      {
-        text: 'References',
-        items: [
-          { text: 'Roadmap', link: 'references/roadmap' }
-        ]
       }
     ],
 
@@ -45,7 +40,7 @@ export default defineConfig({
 
     footer: {
       message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> product ecosystem',
-      copyright: ''
+      copyright: '2026'
     }
   }
 })
