@@ -9,28 +9,43 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/guide/getting-started' },
-      { text: 'Reference', link: '/api-examples' }
+      { text: 'Documentation', link: '/overview/introduction' }
     ],
 
     sidebar: [
       {
-        text: 'Introduction',
+        text: 'Overview',
         items: [
-          { text: 'Getting Started', link: '/guide/getting-started' },
+          { text: 'Introduction', link: '/overview/introduction' },
+          { text: 'Installation', link: '/overview/installation' },
+          { text: 'Project Structure', link: '/overview/project-structure' },
+          { text: 'Naming Conventions', link: '/overview/naming-conventions' },
         ]
       },
       {
-        text: 'Examples',
+        text: 'Apex Libraries',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Strings', link: 'apex/strings' },
+          { text: 'Markdown Examples', link: 'apex/markdown-examples' },
+          { text: 'Runtime API Examples', link: 'apex/api-examples' }
+        ]
+      },
+      {
+        text: 'References',
+        items: [
+          { text: 'Roadmap', link: 'references/roadmap' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://slightwork.dev' }
-    ]
+      { icon: 'github', link: 'https://github.com/dannielikestocode/slightwork' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/wewyn/' }
+    ],
+
+    footer: {
+      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> product ecosystem',
+      copyright: ''
+    }
   }
 })

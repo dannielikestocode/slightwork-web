@@ -3,15 +3,18 @@ layout: home
 
 hero:
   name: "SlightWork"
-  text: "The definitive Salesforce developer framework"
-  tagline: Build robust, fast, and scalable applications with ease. Designed for modern development workflows.
+  text: "The modern Salesforce developer framework"
+  tagline: "Build robust and maintainable Salesforce applications with ease that scale with your growth."
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/getting-started
+      link: /overview/introduction
+    - theme: brand
+      text: Check Us Out
+      link: https://wynforce.com
     - theme: alt
       text: View on GitHub
-      link: https://github.com/slightwork/core
+      link: https://github.com/dannielikestocode/slightwork
 
 features:
   - title: Lightning Fast
