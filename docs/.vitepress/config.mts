@@ -24,11 +24,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Apex Libraries',
+        text: 'Apex',
         items: [
-          { text: 'Strings', link: 'apex/strings' },
-          { text: 'Markdown Examples', link: 'apex/markdown-examples' },
-          { text: 'Runtime API Examples', link: 'apex/api-examples' }
+          { text: 'Strings', link: 'apex/strings' }
         ]
       }
     ],
