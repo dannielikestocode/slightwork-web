@@ -36,7 +36,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> product ecosystem',
+      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> ecosystem',
       copyright: '2026'
     }
   }
