@@ -1,15 +1,15 @@
 # Strings
 
-The Strings module is all about... well, strings. Just like most languages, Strings are  immutable in Apex. This means that once a String object is created, it cannot be changed. Any operation that appears to modify a String actually creates a new String object, which can have performance implications in Apex when dealing with heavy string manipulation.
+The Strings module is all about... well, strings. Strings are [immutable](https://en.wikipedia.org/wiki/Immutable_object) in Apex, meaning that once a String object is created, it cannot be changed. Any operation that appears to modify a String actually creates a new String object, which can have performance implications in Apex when dealing with heavy string manipulation.
 
-This module was designed to provide a more developer-friendly API for working with strings in Apex, as well as some additional utility methods that are not available in the built-in String class.
+This module was designed to provide a more developer-friendly API for working with strings in Apex, as well as some additional utility methods that are not available within the built-in String class.
 
 [[toc]]
 
 ## StringBuilder
 
-::: tip GitHub Source
-<a href="https://github.com/dannielikestocode/slightwork/blob/string-builder-v1/force-app/main/default/classes/stringBuilder/StringBuilder.cls" target="_blank" rel="noopener">StringBuilder.cls</a>
+::: tip Source Code
+[StringBuilder.cls](https://github.com/dannielikestocode/slightwork/blob/string-builder-v1/force-app/main/default/classes/stringBuilder/StringBuilder.cls)
 :::
 
 The StringBuilder class serves as a utility to easily create strings within Apex. While it doesn't possess the full capabilities of a traditional StringBuilder as seen in other languages (such as Java), it does provide a convenient way to build strings composed of many parts.
