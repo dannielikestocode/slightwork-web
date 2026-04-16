@@ -18,13 +18,15 @@ export default defineConfig({
         text: 'Overview',
         items: [
           { text: 'Introduction', link: '/overview/introduction' },
-          { text: 'Installation', link: '/overview/installation' },
-          { text: 'Project Structure', link: '/overview/project-structure' }
+          { text: 'Project Structure', link: '/overview/project-structure' },
+          { text: 'Deployment', link: '/overview/deployment' },
+          { text: 'Contributors', link: '/overview/contributors' }
         ]
       },
       {
         text: 'Apex',
         items: [
+          { text: 'Base', link: 'apex/base' },
           { text: 'Strings', link: 'apex/strings' }
         ]
       }
@@ -36,8 +38,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> ecosystem',
-      copyright: '2026'
+      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> ecosystem'
     }
   }
 })

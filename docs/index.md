@@ -17,13 +17,13 @@ hero:
       link: https://github.com/dannielikestocode/slightwork
 
 features:
-  - title: Lightning Fast
-    details: Built on cutting edge architecture to ensure your applications compile and run at blazing speeds.
-    icon: ⚡️
   - title: Developer First
-    details: Intuitive APIs, excellent TypeScript support, and comprehensive documentation for a smooth DX.
+    details: Intuitive design, open source, and comprehensive documentation for a smooth DX.
     icon: 🛠️
+  - title: Enterprise Ready
+    details: Thoroughly tested and built to scale from Day 1 using enterprise-grade patterns and practices.
+    icon: ⚡️
   - title: Highly Extensible
-    details: A powerful plugin system allows you to adapt and extend the framework to meet your specific needs.
+    details: Leverages the power of modern development principles to easily adapt it to your needs.
     icon: 🧩
 ---

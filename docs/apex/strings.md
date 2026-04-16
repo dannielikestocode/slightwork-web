@@ -8,15 +8,24 @@ This module was designed to provide a more developer-friendly API for working wi
 
 ## StringBuilder
 
-::: tip Source Code
+::: info 💾 Source Code
 [StringBuilder.cls](https://github.com/dannielikestocode/slightwork/blob/string-builder-v1/force-app/main/default/classes/stringBuilder/StringBuilder.cls)
 :::
 
 The StringBuilder class serves as a utility to easily create strings within Apex. While it doesn't possess the full capabilities of a traditional StringBuilder as seen in other languages (such as Java), it does provide a convenient way to build strings composed of many parts.
 
+### Implementation
+
+- StringBuilder implements the <code>List<></code> collection type to collect all appended objects to avoid creating multiple string objects during the build process
+- The <code>append()</code> method can be used to append any object to the list
+- The output format of certain object types (such as <code>Datetime</code>) are influenced by the settings of the user that initiated the Apex transaction (E.g., Date Locale)
+- When <code>build()</code> is called, it calls the <code>String.join()</code> method to combine all objects within the underlying list
+- The behaviour of StringBuilder can be configured using various options, such as the <code>deduplicate</code> property
+
+
 ### Demos
 
-#### Basic Usage
+**Basic Usage**
 
 ```apex
 // Initialize
@@ -30,7 +39,7 @@ String helloWorld = sb.build();
 System.debug(helloWorld);
 ```
 
-#### Loops
+**Loops**
 
 ```apex
 // Initialize
@@ -45,7 +54,7 @@ String numbers = sb.build();
 System.debug(numbers);
 ```
 
-#### Multiple Object Types
+**Multiple Object Types**
 
 ```apex
 // Initialize with options
@@ -64,17 +73,11 @@ System.debug(multiObjectString);
 
 The following points provide guidance on when to use the StringBuilder class:
 
-<ul>
-  <li>
-    Building strings in loops or when concatenating many strings together
-  </li>
-  <li>
-    Useful for creating strings with specific formatting, such as adding whitespace or newlines
-  </li>
-  <li>
-    Convenient for building strings in a more readable and maintainable way
-  </li>
-  <li>
-    Ideal for building strings from a combination of different object types
-  </li>
-</ul>
+- Building strings in loops or when concatenating many strings together
+- Useful for creating strings with specific formatting, such as adding whitespace or newlines
+- Convenient for building strings in a more readable and maintainable way
+- Ideal for building strings from a combination of different object types
+
+::: tip 📝 Note
+Ultimately, think of StringBuilder as a convenience module. Since Salesforce doesn't reveal the inner workings of certain methods (such as <code>String.join()</code>), we can't assume that it's more memory or time performant than traditional string concatenation or methods such as <code>String.format()</code> (but, you can always try creating your own benchmarking tests to prove otherwise!).
+:::
