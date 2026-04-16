@@ -13,8 +13,11 @@ hero:
       text: Check Us Out
       link: https://wynforce.com
     - theme: alt
-      text: View on GitHub
+      text: View Source
       link: https://github.com/dannielikestocode/slightwork
+    - theme: alt
+      text: See Roadmap
+      link: https://github.com/users/dannielikestocode/projects/4/views/3
 
 features:
   - title: Developer First
