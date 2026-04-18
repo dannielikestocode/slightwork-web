@@ -29,8 +29,8 @@ export default defineConfig({
       {
         text: 'Apex',
         items: [
-          { text: 'Base', link: 'apex/base' },
-          { text: 'Strings', link: 'apex/strings' }
+          { text: 'Base', link: '/apex/base' },
+          { text: 'Strings', link: '/apex/strings' }
         ]
       }
     ],
