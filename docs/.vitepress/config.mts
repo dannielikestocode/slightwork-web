@@ -3,9 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "SlightWork",
-  description: "A developer-focused framework for building scalable apps.",
+  description: "A developer-focused framework for building scalable Salesforce apps.",
+  appearance: 'force-dark',
+  head: [['link', { rel: 'icon', href: '' }]],
   // Dark mode toggle is enabled by default in the default theme
   themeConfig: {
+    // logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -38,7 +41,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'SlightWork is part of the <a href="" target="_blank" rel="noopener">Wynforce</a> ecosystem'
+      message: 'SlightWork is part of the <a href="https://wynforce.com" target="_blank" rel="noopener">Wynforce</a> ecosystem'
     }
   }
 })
