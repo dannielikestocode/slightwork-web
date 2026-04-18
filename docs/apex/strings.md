@@ -9,7 +9,7 @@ This module was designed to provide a more developer-friendly API for working wi
 ## StringBuilder
 
 ::: info 💾 Source Code
-[StringBuilder.cls](https://github.com/dannielikestocode/slightwork/blob/string-builder-v1/force-app/main/default/classes/stringBuilder/StringBuilder.cls)
+[StringBuilder.cls](https://github.com/dannielikestocode/slightwork/blob/main/force-app/main/default/classes/strings/StringBuilder.cls)
 :::
 
 The StringBuilder class serves as a utility to easily create strings within Apex. While it doesn't possess the full capabilities of a traditional StringBuilder as seen in other languages (such as Java), it does provide a convenient way to build strings composed of many parts.
