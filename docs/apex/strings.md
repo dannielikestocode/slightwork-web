@@ -1,8 +1,8 @@
 # Strings
 
-The Strings module is all about... well, strings. Strings are [immutable](https://en.wikipedia.org/wiki/Immutable_object) in Apex, meaning that once a String object is created, it cannot be changed. Any operation that appears to modify a String actually creates a new String object, which can have performance implications in Apex when dealing with heavy string manipulation.
+The Strings module is all about... well, strings. Strings are [immutable](https://en.wikipedia.org/wiki/Immutable_object) in Apex, meaning that a String object cannot be modified once created. Any operation that appears to modify a String actually creates a new String object, which can have performance implications in Apex when dealing with heavy string manipulation.
 
-This module was designed to provide a more developer-friendly API for working with strings in Apex, as well as some additional utility methods that are not available within the built-in String class.
+This module was designed to provide a developer-friendly API for working with strings in Apex, as well as some additional utility methods that are not available within the built-in String class.
 
 [[toc]]
 
