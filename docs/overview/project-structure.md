@@ -15,15 +15,13 @@ force-app/
             
 ```
 
-## Modules
+## Apex
 
-Modules are the building blocks of SlightWork, serving as both logical and technical boundaries to correlate functionality that solve specific problem domains. Each module is designed to work independently, but can also work in conjunction with other modules  resulting in a highly modular and flexible framework.
+Apex code is organized as <code>modules</code>, which serves as one of the pillars of SlightWork. These modules are designed to be both logical and technical boundaries that correlate functionality for solving specific problem domains. Each module is designed to work independently, but can also work in conjunction with other modules resulting in a highly modular and flexible framework.
 
 Additionally, SlightWork was designed with extensibility in mind, meaning you can easily modify or extend functionality to suit your specific needs.
 
-## Folder Hierarchy 
-
-### Apex
+### Folder Hierarchy 
 
 SFDX projects give you the flexibility to create multi-level folder structures for Apex-based metadata (classes, enums, interfaces, etc.). SlightWork takes advantage of this through the implementation of a hierarchical folder structure that adheres to the following pattern:
 
@@ -38,22 +36,20 @@ moduleName/
     tests/
 ```
 
-### Lightning Web Components (LWC)
+## Lightning Web Components (LWC)
 
 Lightning Web Components are stored within the default, top-level <code>lwc</code> folder. However, additional assets referenced by components (CSS, Javascript, etc.) are organized as follows:
 
 - **Generic Assets:** Bundled as <code>Static Resources</code> to be accessed by any component
 - **Component-Specific Assets:** Stored directly as part of the component's definition
 
-### Other Metadata
+## Other Metadata
 
 All other metadata (objects, permissions, etc.) are stored within their respective top-level folders due to limitations on how SFDX handles metadata organization for other asset types.
 
 ## Manifests
 
-To simplify deployment (further outlined within the upcoming [Deployment](deployment.md) page), each module comes with its own [manifest](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/manifest_samples.htm) file, also know as a <code>package.xml</code> file. These files define all the relevant metadata required to deploy and use the functionality of a module within an org.
-
-This allows you to deploy only the modules you need, or all of them at once. Here's an example of the manifest file for the Strings module:
+To simplify deployment (further outlined within the upcoming [Deployment](deployment.md) page), predefined [manifest](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/manifest_samples.htm) files (also known as a <code>package.xml</code> files) are included with SlightWork. These files define all the relevant metadata required to deploy and use specific functionality. Here's an example manifest file for the Apex Strings module:
 
 <code>path: manifest/strings.xml</code>
 

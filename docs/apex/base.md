@@ -4,7 +4,7 @@
 [Base](https://github.com/dannielikestocode/slightwork/tree/main/force-app/main/default/classes/base)
 :::
 
-The <code>Base</code> module is a collection of foundational metadata that's designed to be implemented or extended by any domain-specific modules. This includes (but is not limited to):
+The <code>Base</code> Apex module is a collection of foundational metadata that's designed to be implemented or extended by any domain-specific modules. This includes (but is not limited to):
 
 - Base Classes
 - Enums
