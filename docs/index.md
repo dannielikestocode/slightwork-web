@@ -6,7 +6,7 @@ hero:
   text: "The modern Salesforce developer framework"
   tagline: "Build robust and maintainable Salesforce applications with ease."
   image:
-    src: /img/Logo.png
+    src: /Logo.png
     alt: SlightWork Logo
   actions:
     - theme: brand

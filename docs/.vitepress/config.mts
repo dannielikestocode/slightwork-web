@@ -6,7 +6,7 @@ export default defineConfig({
   description: "A developer-focused framework for building scalable Salesforce apps.",
   appearance: 'force-dark',
   head: [
-    ['link', { rel: 'icon', href: '/img/favicon_io/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon_io/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#1A3650' }],
     ['meta', { name: 'keywords', content: 'Salesforce, framework, developer, SlightWork, Apex, Wynforce, scalable apps' }],
     ['meta', { name: 'author', content: 'Wynforce' }],
@@ -20,7 +20,7 @@ export default defineConfig({
   ],
   // Dark mode toggle is enabled by default in the default theme
   themeConfig: {
-    logo: '/img/Logo.png',
+    logo: '/Logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
